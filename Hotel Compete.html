@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hotel Compete — Your competition is your business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== ANNOUNCEMENT ============== -->
+<div class="topstrip">
+  <div class="wrap topstrip__inner">
+    <span class="dot"></span>
+    <span>New release · <strong>Compset Analyzer Plus</strong> — algorithmic compset selection, now in private beta.</span>
+    <a href="#suite" class="topstrip__link">See what's new <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+  </div>
+</div>
+
+<!-- ============== NAV ============== -->
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="#" class="logo" aria-label="Hotel Compete home">
+      <svg viewBox="0 0 28 28" width="22" height="22" aria-hidden="true">
+        <rect x="3" y="9" width="22" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <rect x="6.5" y="12" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="11" y="12" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="15.5" y="12" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="20" y="12" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="6.5" y="16" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="11" y="16" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="20" y="16" width="2.4" height="2.4" fill="currentColor"/>
+        <rect x="13.5" y="19.5" width="3.4" height="5.5" fill="currentColor"/>
+        <path d="M9 9V5h10v4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <span class="logo__word">Hotel<em>Compete</em></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <div class="nav__item has-menu">
+        <button class="nav__btn">Solutions <svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5l3 3 3-3"/></svg></button>
+      </div>
+      <a href="#process" class="nav__btn">How it works</a>
+      <a href="#suite" class="nav__btn">Suite</a>
+      <a href="#" class="nav__btn">About</a>
+      <a href="#" class="nav__btn">Blog</a>
+    </nav>
+
+    <div class="nav__right">
+      <a href="#" class="nav__phone"><svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 3.5c0 5.5 4.5 10 10 10l1.5-2.5-3-1.5L9.5 11C7 10 6 9 5 6.5l1.5-1.5L5 2 2.5 3.5z"/></svg>(844) 330-6888</a>
+      <a href="https://portal.hotelcompete.com/" class="nav__login">Client login</a>
+      <a href="#demo" class="btn btn--primary">Schedule a demo</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <div class="eyebrow">
+        <span class="eyebrow__dot"></span>
+        Competitive rate intelligence for hoteliers
+      </div>
+      <h1 class="display">
+        Your competition <br/>
+        <em>is</em> your business.
+      </h1>
+      <p class="lede">
+        Understand what every direct competitor is doing — pricing, availability, parity, sentiment — through the same lens your guests use. Then turn that signal into the next move.
+      </p>
+      <div class="hero__cta">
+        <a href="#demo" class="btn btn--primary btn--lg">
+          Schedule a demo
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a href="#suite" class="btn btn--ghost btn--lg">Explore the suite</a>
+      </div>
+      <ul class="hero__bullets">
+        <li><svg viewBox="0 0 12 12" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6.5l2.5 2.5L10 3.5"/></svg>Booker's-eye view of every rate</li>
+        <li><svg viewBox="0 0 12 12" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6.5l2.5 2.5L10 3.5"/></svg>Hourly alerts on 8 competitors</li>
+        <li><svg viewBox="0 0 12 12" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6.5l2.5 2.5L10 3.5"/></svg>90-day forward look</li>
+      </ul>
+    </div>
+
+    <!-- ============== HERO DASHBOARD MOCK ============== -->
+    <div class="hero__viz" aria-hidden="true">
+      <!-- Background photo plate -->
+      <div class="viz__plate"></div>
+
+      <!-- Main dashboard card -->
+      <div class="dash">
+        <div class="dash__head">
+          <div class="dash__title">
+            <div class="dash__dot"></div>
+            <span>Rate Trends · 90-day forward</span>
+          </div>
+          <div class="dash__meta">
+            <span class="pill pill--live"><span class="pill__pulse"></span>Live</span>
+            <span class="dash__date">Tue · May 14</span>
+          </div>
+        </div>
+
+        <div class="dash__hero-row">
+          <div>
+            <div class="dash__label">Your ADR (next 14)</div>
+            <div class="dash__big">$248<span class="dash__sub">.50</span></div>
+          </div>
+          <div class="dash__delta dash__delta--up">
+            <svg viewBox="0 0 12 12" width="10" height="10" fill="currentColor"><path d="M6 2l5 5H8v3H4V7H1z"/></svg>
+            +4.8% vs compset
+          </div>
+        </div>
+
+        <!-- Chart -->
+        <svg class="chart" viewBox="0 0 360 120" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="gFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#F26A4B" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="#F26A4B" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="gFill2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0F3D47" stop-opacity=".14"/>
+              <stop offset="100%" stop-color="#0F3D47" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- gridlines -->
+          <g stroke="#E8E2D7" stroke-width="1">
+            <line x1="0" y1="30" x2="360" y2="30"/>
+            <line x1="0" y1="60" x2="360" y2="60"/>
+            <line x1="0" y1="90" x2="360" y2="90"/>
+          </g>
+          <!-- compset area -->
+          <path d="M0,72 C30,68 50,76 80,70 C110,64 130,78 160,72 C190,66 210,80 240,74 C270,68 290,82 320,76 L360,72 L360,120 L0,120 Z" fill="url(#gFill2)"/>
+          <path d="M0,72 C30,68 50,76 80,70 C110,64 130,78 160,72 C190,66 210,80 240,74 C270,68 290,82 320,76 L360,72" fill="none" stroke="#0F3D47" stroke-width="1.5" stroke-dasharray="3 3" opacity=".55"/>
+          <!-- your rate area -->
+          <path d="M0,58 C30,50 50,62 80,52 C110,42 130,56 160,46 C190,38 210,52 240,40 C270,30 290,46 320,36 L360,30 L360,120 L0,120 Z" fill="url(#gFill)"/>
+          <path d="M0,58 C30,50 50,62 80,52 C110,42 130,56 160,46 C190,38 210,52 240,40 C270,30 290,46 320,36 L360,30" fill="none" stroke="#F26A4B" stroke-width="2"/>
+          <!-- focus marker -->
+          <circle cx="240" cy="40" r="4" fill="#fff" stroke="#F26A4B" stroke-width="2"/>
+          <line x1="240" y1="0" x2="240" y2="120" stroke="#F26A4B" stroke-dasharray="2 3" opacity=".4"/>
+        </svg>
+
+        <div class="chart__axis">
+          <span>May 14</span><span>May 28</span><span>Jun 11</span><span>Jun 25</span><span>Jul 9</span>
+        </div>
+
+        <!-- Legend -->
+        <div class="dash__legend">
+          <span><i class="sw sw--coral"></i>The Greylock · your rate</span>
+          <span><i class="sw sw--teal"></i>Compset median (n=6)</span>
+        </div>
+
+        <!-- Compset rows -->
+        <div class="rows">
+          <div class="row">
+            <span class="row__rank">01</span>
+            <span class="row__name">Marlowe House · King City Suite</span>
+            <span class="row__rate">$262</span>
+            <span class="row__delta up">+$6</span>
+          </div>
+          <div class="row row--you">
+            <span class="row__rank">02</span>
+            <span class="row__name">The Greylock · King Deluxe <em>you</em></span>
+            <span class="row__rate">$248</span>
+            <span class="row__delta flat">—</span>
+          </div>
+          <div class="row">
+            <span class="row__rank">03</span>
+            <span class="row__name">Hotel Brevoort · Premier King</span>
+            <span class="row__rate">$239</span>
+            <span class="row__delta down">−$4</span>
+          </div>
+          <div class="row">
+            <span class="row__rank">04</span>
+            <span class="row__name">Atrium &amp; Co. · Standard King</span>
+            <span class="row__rate">$231</span>
+            <span class="row__delta up">+$3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating alert -->
+      <div class="alert">
+        <div class="alert__icon">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2v3M8 9v.01M3.5 13.5h9L8 4z"/></svg>
+        </div>
+        <div>
+          <div class="alert__title">Marlowe House raised Jun 14 rates</div>
+          <div class="alert__sub">King · $242 → $268 · 2 min ago</div>
+        </div>
+      </div>
+
+      <!-- Floating parity badge -->
+      <div class="parity">
+        <div class="parity__head">
+          <span class="parity__label">Rate parity</span>
+          <span class="parity__score">98<small>%</small></span>
+        </div>
+        <div class="parity__bar"><span style="width:98%"></span></div>
+        <div class="parity__channels">
+          <span class="ch ok">Booking</span>
+          <span class="ch ok">Expedia</span>
+          <span class="ch warn">Hotels.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TRUST BAR ============== -->
+<section class="trust">
+  <div class="wrap">
+    <p class="trust__label">Trusted by revenue teams at</p>
+    <div class="trust__logos">
+      <img src="assets/brand-hilton.png" alt="Hilton" />
+      <img src="assets/brand-ihg.png" alt="IHG" />
+      <img src="assets/brand-wyndham.png" alt="Wyndham" />
+      <img src="assets/brand-choice.png" alt="Choice Hotels" />
+      <img src="assets/brand-laquinta.png" alt="La Quinta" />
+      <img src="assets/brand-onpeak.png" alt="OnPeak" />
+      <img src="assets/brand-hccl.png" alt="CLC Lodging" />
+    </div>
+  </div>
+</section>
+
+<!-- ============== APPROACH (4 PILLARS) ============== -->
+<section class="approach" id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__left">
+        <span class="kicker">Our approach</span>
+        <h2 class="h2">A different way of <em>watching the market.</em></h2>
+      </div>
+      <p class="section-head__lede">
+        Most rate shoppers see what hotels publish. Hotel Compete sees what your guests actually see — at the exact moment they decide to book. Then we make that signal useful.
+      </p>
+    </div>
+
+    <div class="pillars">
+      <article class="pillar">
+        <div class="pillar__num">01</div>
+        <div class="pillar__icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="17" cy="24" r="9"/>
+            <circle cx="31" cy="24" r="9"/>
+            <circle cx="17" cy="24" r="3.5" fill="currentColor"/>
+            <circle cx="31" cy="24" r="3.5" fill="currentColor"/>
+            <path d="M8 24c0-4 2-7 2-9s-1-3-1-3M40 24c0-4-2-7-2-9s1-3 1-3"/>
+            <path d="M22 24h4"/>
+          </svg>
+        </div>
+        <h3>Booker's-eye view</h3>
+        <p>We collect the same rates, packages, and inventory your potential guests see — not just what hotels publish to STR.</p>
+      </article>
+
+      <article class="pillar">
+        <div class="pillar__num">02</div>
+        <div class="pillar__icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="6" y="8" width="36" height="32" rx="2"/>
+            <path d="M12 32V22M19 32V16M26 32V26M33 32V12M40 32V20"/>
+            <circle cx="33" cy="12" r="2" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Dynamic analysis</h3>
+        <p>Look beyond rate. Channel parity, length-of-stay restrictions, package velocity, sentiment — the full booking decision.</p>
+      </article>
+
+      <article class="pillar">
+        <div class="pillar__num">03</div>
+        <div class="pillar__icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M24 6c-7 0-12 5-12 11 0 4 2 6 4 9v5h16v-5c2-3 4-5 4-9 0-6-5-11-12-11z"/>
+            <path d="M20 37h8M21 41h6"/>
+            <path d="M24 17v8M20 21h8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Actionable insights</h3>
+        <p>Raw data becomes decisions — clear, time-boxed recommendations your revenue team can act on before morning standup.</p>
+      </article>
+
+      <article class="pillar">
+        <div class="pillar__num">04</div>
+        <div class="pillar__icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M24 5l16 5v12c0 9-7 17-16 21-9-4-16-12-16-21V10z"/>
+            <path d="M17 24l5 5 10-10" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>Pro-active steps</h3>
+        <p>Prevent share loss before it happens. Hourly alerts surface inflection points in the moment, not in next month's report.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROCESS ============== -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <span class="kicker kicker--light">How it works</span>
+      <h2 class="h2 h2--light">From noisy market signals <br/><em>to your next move.</em></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">01</div>
+        <div class="step__title">We collect the raw data</div>
+        <div class="step__body">Booker's-eye scrapes across OTAs, brand.com, and metasearch — every channel a real guest would visit, refreshed hourly.</div>
+        <div class="step__viz">
+          <div class="streamline">
+            <div class="stream">booking.com<i></i></div>
+            <div class="stream">expedia<i></i></div>
+            <div class="stream">brand.com<i></i></div>
+            <div class="stream">hotels.com<i></i></div>
+            <div class="stream">google<i></i></div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="step__connector" viewBox="0 0 60 20" aria-hidden="true">
+        <path d="M2 10h54M50 5l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <div class="step">
+        <div class="step__num">02</div>
+        <div class="step__title">Translate into insight</div>
+        <div class="step__body">We normalize, deduplicate, weight by booking velocity and sentiment, and score every move your compset makes.</div>
+        <div class="step__viz">
+          <div class="brain">
+            <div class="brain__col">
+              <span class="bar" style="height:60%"></span>
+              <span class="bar bar--coral" style="height:82%"></span>
+              <span class="bar" style="height:44%"></span>
+              <span class="bar" style="height:70%"></span>
+              <span class="bar bar--coral" style="height:90%"></span>
+              <span class="bar" style="height:55%"></span>
+              <span class="bar" style="height:38%"></span>
+            </div>
+            <div class="brain__line">
+              <svg viewBox="0 0 120 30"><path d="M0,18 C20,8 40,22 60,12 C80,2 100,18 120,8" fill="none" stroke="#F4D9A1" stroke-width="2"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="step__connector" viewBox="0 0 60 20" aria-hidden="true">
+        <path d="M2 10h54M50 5l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <div class="step">
+        <div class="step__num">03</div>
+        <div class="step__title">Recommend the next step</div>
+        <div class="step__body">A short list of moves — close out, hold, drop $8, open LRA — each tied to the signal that triggered it and the expected lift.</div>
+        <div class="step__viz">
+          <div class="reco">
+            <div class="reco__row"><span class="reco__tag tag--green">HOLD</span><span>Jun 14 · King</span></div>
+            <div class="reco__row"><span class="reco__tag tag--coral">DROP $8</span><span>Jul 02 · Queen</span></div>
+            <div class="reco__row"><span class="reco__tag tag--teal">OPEN LRA</span><span>Aug 19 · Suite</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STATS ============== -->
+<section class="stats">
+  <div class="wrap stats__grid">
+    <div>
+      <div class="stat__num">2.4M</div>
+      <div class="stat__label">Rate observations daily</div>
+    </div>
+    <div>
+      <div class="stat__num">90 <span>days</span></div>
+      <div class="stat__label">Forward visibility</div>
+    </div>
+    <div>
+      <div class="stat__num">6 <span>min</span></div>
+      <div class="stat__label">Median alert latency</div>
+    </div>
+    <div>
+      <div class="stat__num">11<span>yrs</span></div>
+      <div class="stat__label">Helping revenue teams win</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SUITE ============== -->
+<section class="suite" id="suite">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-head__left">
+        <span class="kicker">The suite</span>
+        <h2 class="h2">Six tools, one source of truth.</h2>
+      </div>
+      <p class="section-head__lede">
+        Use them à la carte or together. Every product feeds the same compset model, so insights stay consistent across the team.
+      </p>
+    </div>
+
+    <div class="suite__grid">
+
+      <!-- Featured large -->
+      <article class="card card--feature">
+        <div class="card__media">
+          <div class="mini-dash">
+            <div class="mini-dash__head">
+              <div class="mini-dash__heading">
+                <span class="mini-dash__crumbs">Properties &nbsp;›&nbsp; The Greylock &nbsp;›&nbsp; <b>Compset</b></span>
+                <span class="mini-dash__title">Compset Analyzer<span class="pill pill--green">NEW</span></span>
+              </div>
+              <div class="mini-dash__tabs">
+                <button class="mini-tab is-active">Map</button>
+                <button class="mini-tab">Matrix</button>
+                <button class="mini-tab">Score</button>
+              </div>
+            </div>
+
+            <div class="mini-dash__body">
+              <!-- Map: scattered compset hotels -->
+              <div class="cs-map" aria-hidden="true">
+                <svg class="cs-map__grid" viewBox="0 0 400 260" preserveAspectRatio="none">
+                  <defs>
+                    <radialGradient id="ring1" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="rgba(242,106,75,.0)"/>
+                      <stop offset="70%" stop-color="rgba(242,106,75,.0)"/>
+                      <stop offset="90%" stop-color="rgba(242,106,75,.18)"/>
+                      <stop offset="100%" stop-color="rgba(242,106,75,0)"/>
+                    </radialGradient>
+                  </defs>
+                  <!-- background grid -->
+                  <g stroke="rgba(255,251,243,.06)" stroke-width="1">
+                    <path d="M40 0v260M120 0v260M200 0v260M280 0v260M360 0v260"/>
+                    <path d="M0 40h400M0 100h400M0 160h400M0 220h400"/>
+                  </g>
+                  <!-- diagonal streets -->
+                  <g stroke="rgba(255,251,243,.08)" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M0 200 L200 60"/>
+                    <path d="M120 260 L320 100"/>
+                  </g>
+                  <!-- demand rings around your hotel -->
+                  <circle cx="200" cy="130" r="100" fill="url(#ring1)"/>
+                  <circle cx="200" cy="130" r="60" fill="none" stroke="rgba(242,106,75,.25)" stroke-dasharray="3 5"/>
+                  <circle cx="200" cy="130" r="100" fill="none" stroke="rgba(242,106,75,.14)" stroke-dasharray="3 5"/>
+                </svg>
+
+                <!-- hotel pins -->
+                <div class="pin pin--you" style="left:50%;top:50%"><i></i><label>The Greylock</label></div>
+                <div class="pin pin--in" style="left:35%;top:32%"><i>91</i></div>
+                <div class="pin pin--in" style="left:64%;top:38%"><i>87</i></div>
+                <div class="pin pin--in" style="left:42%;top:62%"><i>82</i></div>
+                <div class="pin pin--in" style="left:60%;top:70%"><i>78</i></div>
+                <div class="pin pin--in" style="left:74%;top:55%"><i>74</i></div>
+                <div class="pin pin--out" style="left:18%;top:78%"><i>54</i></div>
+                <div class="pin pin--out" style="left:82%;top:22%"><i>49</i></div>
+                <div class="pin pin--out" style="left:14%;top:20%"><i>41</i></div>
+
+                <div class="cs-map__legend">
+                  <span><i class="dot dot--you"></i>You</span>
+                  <span><i class="dot dot--in"></i>True compset · 5</span>
+                  <span><i class="dot dot--out"></i>Outside set</span>
+                </div>
+              </div>
+
+              <!-- Right: stacked score + metrics + bars -->
+              <div class="cs-side">
+                <div class="cs-score">
+                  <svg viewBox="0 0 110 110" width="100" height="100">
+                    <circle cx="55" cy="55" r="44" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="8"/>
+                    <circle cx="55" cy="55" r="44" fill="none" stroke="#F26A4B" stroke-width="8" stroke-dasharray="227 276" stroke-linecap="round" transform="rotate(-90 55 55)"/>
+                    <text x="55" y="56" text-anchor="middle" fill="#fff" font-family="Instrument Serif" font-size="34">82</text>
+                    <text x="55" y="74" text-anchor="middle" fill="rgba(255,255,255,.55)" font-size="7" letter-spacing="2">FIT SCORE</text>
+                  </svg>
+                  <div class="cs-score__delta">
+                    <span class="up-tag">▲ +6</span>
+                    <span class="cs-score__sub">vs last quarter</span>
+                  </div>
+                </div>
+
+                <ul class="cs-metrics">
+                  <li><span>Distance</span><b>0.4 mi</b></li>
+                  <li><span>Class match</span><b>Upscale</b></li>
+                  <li><span>Inventory overlap</span><b>91%</b></li>
+                  <li><span>Demand share</span><b class="pos">+12pp</b></li>
+                </ul>
+
+                <div class="cs-share">
+                  <div class="cs-share__head">
+                    <span>Demand share · last 30d</span>
+                    <span class="cs-share__total">$1.2M</span>
+                  </div>
+                  <div class="cs-share__bars">
+                    <span style="--w:78%" data-l="You">You</span>
+                    <span style="--w:62%" data-l="Marlowe">Marlowe</span>
+                    <span style="--w:54%" data-l="Brevoort">Brevoort</span>
+                    <span style="--w:44%" data-l="Atrium">Atrium</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mini-dash__foot">
+              <span class="ts"><i></i>Refreshed 2 min ago</span>
+              <span class="hint">▾ Recommended set · 5 of 9 properties</span>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Featured</span>
+          <h3>Comp Set Analyzer</h3>
+          <p>An algorithmic approach to your true compset — assess market position across multiple variables and compare against a user-selected set.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--photo" style="background-image:url('assets/img-keycard.jpeg')"></div>
+        <div class="card__body">
+          <span class="card__tag">Rate intel</span>
+          <h3>Rate Trends Tracker</h3>
+          <p>Daily refresh across the next 90 check-in dates. Track up to 12 competitors against a customizable market reference rate.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--photo" style="background-image:url('assets/img-roomnumber.jpeg')"></div>
+        <div class="card__body">
+          <span class="card__tag">On demand</span>
+          <h3>Ad Hoc Shopping</h3>
+          <p>Unlimited shops within compset, returned in 24 hours, with full historical retention for trend analysis.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--photo" style="background-image:url('assets/img-bell.jpeg')"></div>
+        <div class="card__body">
+          <span class="card__tag">Real-time</span>
+          <h3>Near Real-Time Alerts</h3>
+          <p>Hourly alerts to inbox or Slack, surfacing rate moves on the next 14 check-ins across up to 8 competitors.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--photo" style="background-image:url('assets/img-pexels.jpeg')"></div>
+        <div class="card__body">
+          <span class="card__tag">Voice of guest</span>
+          <h3>Guest Review Monitor</h3>
+          <p>Track sentiment across review sites against your compset — and tie reputation movement back to rate elasticity.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media card__media--photo" style="background-image:url('assets/adobe-hotel.jpg')"></div>
+        <div class="card__body">
+          <span class="card__tag">Distribution</span>
+          <h3>Rate Parity Monitor</h3>
+          <p>Catch parity breaks the moment they happen — across every OTA, every channel, every length-of-stay window.</p>
+          <a class="link-arrow" href="#">Learn more <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== QUOTE ============== -->
+<section class="quote">
+  <div class="wrap">
+    <figure class="quote__fig">
+      <svg class="quote__mark" viewBox="0 0 64 48" width="60" height="44" fill="currentColor" aria-hidden="true">
+        <path d="M0 48V28C0 12 8 2 24 0v8c-8 2-12 8-12 16h12v24H0zm36 0V28C36 12 44 2 60 0v8c-8 2-12 8-12 16h12v24H36z"/>
+      </svg>
+      <blockquote>
+        We replaced two shopping tools and a manual rate-pull spreadsheet with Hotel Compete. The team gets to morning standup with answers, not questions.
+      </blockquote>
+      <figcaption>
+        <strong>Mireille Okafor</strong> <span>·</span> VP Revenue Strategy, Marlowe Hotel Group
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============== DEMO CTA ============== -->
+<section class="demo" id="demo">
+  <div class="wrap demo__grid">
+    <div class="demo__left">
+      <span class="kicker">Get started</span>
+      <h2 class="h2">See your <em>compset</em> in 20 minutes.</h2>
+      <p class="demo__lede">Send us a property and three competitors. We'll run live shops, build a one-page reading of where you sit today, and walk you through it on a call.</p>
+      <ul class="demo__list">
+        <li><span>01</span> Live competitor shops at the time of the call</li>
+        <li><span>02</span> A read on parity, sentiment, and channel mix</li>
+        <li><span>03</span> Three specific moves you could make this week</li>
+      </ul>
+      <div class="demo__contact">
+        <div>
+          <div class="demo__small">Talk to sales</div>
+          <a href="tel:8443306888" class="demo__big">(844) 330‑6888</a>
+        </div>
+        <div>
+          <div class="demo__small">Email</div>
+          <a href="mailto:hello@hotelcompete.com" class="demo__big">hello@hotelcompete.com</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="demo__form" onsubmit="event.preventDefault();this.querySelector('.demo__success').style.display='flex';">
+      <div class="form__head">
+        <h3>Schedule a demo</h3>
+        <span>Typical response · same business day</span>
+      </div>
+      <div class="field-row">
+        <label class="field">
+          <span>First name</span>
+          <input type="text" placeholder="Mireille" required>
+        </label>
+        <label class="field">
+          <span>Last name</span>
+          <input type="text" placeholder="Okafor" required>
+        </label>
+      </div>
+      <label class="field">
+        <span>Work email</span>
+        <input type="email" placeholder="m.okafor@marlowehotels.com" required>
+      </label>
+      <label class="field">
+        <span>Phone</span>
+        <input type="tel" placeholder="+1 (212) 555 0144">
+      </label>
+      <label class="field">
+        <span>Property / portfolio</span>
+        <input type="text" placeholder="Marlowe House — Chicago Loop">
+      </label>
+      <label class="field">
+        <span>What are you trying to figure out?</span>
+        <textarea rows="3" placeholder="We're losing midweek share in Q3 and want to know if it's pricing or parity…"></textarea>
+      </label>
+      <button class="btn btn--primary btn--lg btn--block" type="submit">Request demo
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </button>
+      <p class="form__fine">By submitting you agree to our <a href="#">privacy policy</a>. We won't share your details.</p>
+      <div class="demo__success">
+        <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8.5l3 3 7-7"/></svg>
+        Thanks — we'll be in touch within one business day.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="foot">
+  <div class="wrap foot__top">
+    <div class="foot__brand">
+      <a href="#" class="logo logo--foot">
+        <svg viewBox="0 0 28 28" width="22" height="22">
+          <rect x="3" y="9" width="22" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="6.5" y="12" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="11" y="12" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="15.5" y="12" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="20" y="12" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="6.5" y="16" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="11" y="16" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="20" y="16" width="2.4" height="2.4" fill="currentColor"/>
+          <rect x="13.5" y="19.5" width="3.4" height="5.5" fill="currentColor"/>
+          <path d="M9 9V5h10v4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <span class="logo__word">Hotel<em>Compete</em></span>
+      </a>
+      <p class="foot__addr">
+        225 W Washington St.<br>
+        Suite 1560, Chicago, IL 60606<br>
+        (844) 330‑6888
+      </p>
+      <div class="foot__social">
+        <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 3h3l-7 8 8 10h-6l-5-6-5 6H3l7-9-7-9h6l5 6z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 4a2 2 0 110 4 2 2 0 010-4zM3 9h4v12H3zM10 9h4v2c.7-1.4 2-2 4-2 3 0 4 2 4 5v7h-4v-6c0-1.5-.5-2.5-2-2.5s-2 1-2 2.5V21h-4z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M14 21v-8h3l.5-4H14V6.5c0-1 .3-1.5 1.7-1.5H17V2h-2.5C12 2 11 3.5 11 6v3H8v4h3v8z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="foot__cols">
+      <div>
+        <div class="foot__h">Solutions</div>
+        <a href="#">Overview</a>
+        <a href="#">Hotel Census</a>
+        <a href="#">Rates for RMS</a>
+        <a href="#">Rate Trends Tracker</a>
+        <a href="#">Comp Set Analyzer</a>
+        <a href="#">Guest Review Monitor</a>
+        <a href="#">Rate Parity Monitor</a>
+      </div>
+      <div>
+        <div class="foot__h">Company</div>
+        <a href="#">About &amp; team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div>
+        <div class="foot__h">Resources</div>
+        <a href="#">Client portal</a>
+        <a href="#">Knowledge base</a>
+        <a href="#">API status</a>
+        <a href="#">Press kit</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap foot__bottom">
+    <span>© 2026 Hotel Compete, Inc.</span>
+    <div class="foot__legal">
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Security</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Trigger continuous animations when the process section enters the viewport
+  (function(){
+    const sec = document.querySelector('#process');
+    if (!sec) return;
+    if (!('IntersectionObserver' in window)){ sec.classList.add('in-view'); return; }
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting) sec.classList.add('in-view');
+      });
+    }, { threshold: 0.2 });
+    io.observe(sec);
+
+    // Sequenced entrance for the step cards
+    const steps = sec.querySelectorAll('.step');
+    const io2 = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting){
+          e.target.classList.add('step--in');
+          io2.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    steps.forEach(s => io2.observe(s));
+  })();
+</script>
+</body>
+</html>
